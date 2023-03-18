@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@dqbd/tiktoken': ^0.4.0
+  '@dqbd/tiktoken': ^1.0.2
   '@keyv/redis': ^2.5.6
   '@trivago/prettier-plugin-sort-imports': ^4.1.1
   '@types/node': ^18.15.0
@@ -28,7 +28,7 @@ specifiers:
   uuid: ^9.0.0
 
 dependencies:
-  '@dqbd/tiktoken': 0.4.0
+  '@dqbd/tiktoken': 1.0.2
   cac: 6.7.14
   conf: 11.0.1
   eventsource-parser: 0.0.5
@@ -169,8 +169,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@dqbd/tiktoken/0.4.0:
-    resolution: {integrity: sha512-iaHgmwKAOqowBFZKxelyszoeGLoNw62eOULcmyme1aA1Ymr3JgYl0V7jwpuUm7fksalycZajx3loFn9TRUaviw==}
+  /@dqbd/tiktoken/1.0.2:
+    resolution: {integrity: sha512-AjGTBRWsMoVmVeN55NLyupyM8TNamOUBl6tj5t/leLDVup3CFGO9tVagNL1jf3GyZLkWZSTmYVbPQ/M2LEcNzw==}
     dev: false
 
   /@esbuild-kit/cjs-loader/2.4.2:
@@ -477,8 +477,10 @@ packages:
       indent-string: 5.0.0
     dev: true
 
-  /ajv-formats/2.1.1:
+  /ajv-formats/2.1.1_ajv@8.12.0:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
+    peerDependencies:
+      ajv: ^8.0.0
     peerDependenciesMeta:
       ajv:
         optional: true
@@ -788,7 +790,7 @@ packages:
     engines: {node: '>=14.16'}
     dependencies:
       ajv: 8.12.0
-      ajv-formats: 2.1.1
+      ajv-formats: 2.1.1_ajv@8.12.0
       atomically: 2.0.1
       debounce-fn: 5.1.2
       dot-prop: 7.2.0
